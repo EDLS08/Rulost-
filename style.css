@@ -207,7 +207,7 @@ body::-webkit-scrollbar{
 }
 
 /* MODO RESPONSIVO */
-@media (max-width: 768px) {
+@media (max-width: 450px) {
     
     .nav-container a{ 
         text-decoration:none;
@@ -215,19 +215,8 @@ body::-webkit-scrollbar{
         font-size: 25px;
         display: flex;
     }
-    .carousel {
-        width: 40vw; /* Largura do carrossel */
-        height: 50vw; /* Altura do carrossel */
-        background: rgba(255, 255, 255, 0.1); /* Fundo semitransparente */
-        backdrop-filter: blur(10px); /* Efeito de vidro fosco */
-        border-radius: 15px; /* Cantos arredondados */
-        overflow: hidden; /* Esconde as partes que saem do contêiner */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative; /* Mantém o carrossel em posição fixa */
-        margin-left: 20%;
-    }
+
+
     .two{
         width: 100%;
         height: 100%;
@@ -238,11 +227,11 @@ body::-webkit-scrollbar{
     
     .left-side, .right-side{
         display:flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content:center;
         flex-direction: column;
         height: 100%;
-        width: 50%;
+        width: 100%;
         gap: 5vh;
     }
     
@@ -258,16 +247,44 @@ body::-webkit-scrollbar{
     }
     
     .right-side h2{
-         top:50%;
+         margin-top: -190%;
         color:#fff;
         font-size: 5vw;
-        
+        position: absolute;
+        /* top: -50%; */
+        left:20vw;
+        font-size: 8vw;
     }
 
     .right-side p{
         color:#fff;
-        font-size: 1vw;
+        font-size: 2vw;
         width: 80%;
     }
     
+
+    .carousel {
+        width: 55vw; /* Largura do carrossel */
+        height: 100vw; /* Altura do carrossel */
+        background: rgba(255, 255, 255, 0.1); /* Fundo semitransparente */
+        backdrop-filter: blur(10px); /* Efeito de vidro fosco */
+        border-radius: 15px; /* Cantos arredondados */
+        overflow: hidden; /* Esconde as partes que saem do contêiner */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; /* Mantém o carrossel em posição fixa */
+        margin-left: 10%;
+        margin-top: -50vw;
+        
+    }
+    .carousel img {
+        width: 80%; /* Mantém a imagem centralizada e menor */
+        height: 80%;
+        position: absolute; /* Sobrepõe as imagens */
+        opacity: 0; /* Todas as imagens ficam invisíveis por padrão */
+        transition: opacity 0.5s ease; /* Animação suave na troca */
+        margin:0;
+        margin-bottom: 30px;
+    }
 }
