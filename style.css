@@ -216,8 +216,8 @@ body::-webkit-scrollbar{
         display: flex;
     }
     .carousel {
-        width: 250px; /* Largura do carrossel */
-        height: 300px; /* Altura do carrossel */
+        width: 40vw; /* Largura do carrossel */
+        height: 50vw; /* Altura do carrossel */
         background: rgba(255, 255, 255, 0.1); /* Fundo semitransparente */
         backdrop-filter: blur(10px); /* Efeito de vidro fosco */
         border-radius: 15px; /* Cantos arredondados */
@@ -226,7 +226,7 @@ body::-webkit-scrollbar{
         justify-content: center;
         align-items: center;
         position: relative; /* Mantém o carrossel em posição fixa */
-        margin-left: 30%;
+        margin-left: 20%;
     }
     .two{
         width: 100%;
