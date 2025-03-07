@@ -274,7 +274,7 @@ body::-webkit-scrollbar{
         justify-content: center;
         align-items: center;
         position: relative; /* Mantém o carrossel em posição fixa */
-        margin-left: 10%;
+        margin-left: 15%;
         margin-top: -50vw;
         
     }
